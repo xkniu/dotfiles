@@ -1,0 +1,24 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
+- clean: ['~']
+
+- link:
+    ~/.bash_profile:
+    ~/.bashrc:
+    ~/.dotfiles: ''
+    ~/.gitconfig:
+    ~/.gitignore_global:
+    ~/.inputrc:
+    ~/.oh-my-zsh: vendor/ohmyzsh
+    ~/.vim/bundle/Vundle.vim: vendor/Vundle.vim
+    ~/.vimrc:
+    ~/.zshrc:
+
+- shell:
+  - [vim +PluginInstall +qall, Install vim plugins]

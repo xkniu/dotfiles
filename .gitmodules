@@ -1,0 +1,10 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot.git
+	ignore = dirty
+[submodule "vendor/ohmyzsh"]
+	path = vendor/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "vendor/Vundle.vim"]
+	path = vendor/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git

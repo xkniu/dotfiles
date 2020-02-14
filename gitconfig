@@ -1,0 +1,21 @@
+[user]
+	name = Xuekai Niu
+	email = xuekai.niu@gmail.com
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = false
+
+# Allow local customizations in “~/.gitconfig_local”
+[include]
+	path = ~/.gitconfig_local
+
